@@ -13,7 +13,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title = SITE_TITLE, description = SITE_DESCRIPTION, ogImage = '/placeholder-social.jpg' } = Astro.props;
 ---
 
-<title>{title} - 王苏洋Blog</title>
+<title>{title === SITE_TITLE ? title : `${title} - ${SITE_TITLE}`}</title>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.cn">
@@ -28,7 +28,7 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION, ogImage = '/placehol
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="icon" type="image/svg+xml" href="https://assets.coderfee.com/favicon/www.svg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)">
@@ -55,7 +55,7 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION, ogImage = '/placehol
 
 <!-- rss styles -->
 <link rel="alternate" type="application/rss+xml" href={`${Astro.site}rss.xml`}>
-<link rel="alternate" type="application/rss+xml" title="coderfee's blog" href={new URL("rss.xml", Astro.site)}>
+<link rel="alternate" type="application/rss+xml" title="王苏洋Blog" href={new URL("rss.xml", Astro.site)}>
 
 <slot />
 
