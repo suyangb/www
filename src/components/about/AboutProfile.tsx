@@ -74,11 +74,59 @@ const socialLinks: SocialLink[] = [
 
 const friends: Friend[] = [
   {
-  name: 'Jackie的博客',
-  url: 'https://jackielzq.com/',
-  desc: '记录|交流|分享',
-  avatar: 'https://jackielzq.com/images/favicon.ico'
+    name: '轻笑Chuckle',
+    url: 'https://www.qcqx.cn/',
+    desc: '漫天倾尘,风中轻笑',
+    avatar: 'https://www.qcqx.cn/head.webp'
   },
+  {
+    name: 'Jackie的博客',
+    url: 'https://jackielzq.com/',
+    desc: '记录|交流|分享',
+    avatar: 'https://jackielzq.com/images/favicon.ico'
+  },
+  {
+    name: '幻影博客',
+    url: 'https://blog.52hyjs.com/',
+    desc: '一个打工仔记录生活的网站，人生在世为何不留下一点生活的痕迹呢！',
+    avatar: 'https://blog.52hyjs.com/logo.jpg'
+  },
+  {
+    name: '成烁BLOG',
+    url: 'https://blog.chengshuo.top/',
+    desc: '成烁的个人博客网站',
+    avatar: 'https://blog.chengshuo.top/logo.jpg'
+  },
+  {
+    name: '后港在线',
+    url: 'https://www.0724.top',
+    desc: '本地综合信息网',
+    avatar: 'https://www.0724.top/img/ico.png'
+  },
+  {
+    name: '星屿浮槎',
+    url: 'https://blog.byer.ink/',
+    desc: '我自是年少，韶华倾负',
+    avatar: 'https://blog.byer.ink/api/pro/f/4GOG/ava.jpg'
+  },
+  {
+    name: 'CC米饭',
+    url: 'https://www.ccrice.com/',
+    desc: '是全新的世界！',
+    avatar: 'https://gravatar.loli.net/avatar/39bab898a41e6fa8d7357abd9c283bb7'
+  },
+  {
+    name: 'Oyiso\'s Blog',
+    url: 'https://oyiso.cn',
+    desc: 'The shortest answer is doing',
+    avatar: 'https://oyiso.cn/logo.png'
+  },
+  {
+    name: '笑的博客',
+    url: 'https://blog.xiaow.qzz.io',
+    desc: '随性收拢生活散落的笑意，与同路人漫谈成长微澜。',
+    avatar: 'https://wp-cdn.4ce.cn/v2/TVFIv5x.jpeg'
+  }
 ];
 
 const containerVariants = {
