@@ -28,7 +28,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'X',
-    url: 'https://x.com/coderfee',
+    url: '',
     icon: 'tabler:brand-x',
     color: 'text-zinc-900 dark:text-zinc-100',
     bgColor: 'bg-zinc-900/[0.03] dark:bg-white/[0.05] hover:bg-zinc-900/[0.06] dark:hover:bg-white/[0.08]',
@@ -45,7 +45,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: '微信公众号',
-    url: 'https://assets.coderfee.com/blog/wechat-qrcode.jpg',
+    url: '',
     icon: 'tabler:brand-wechat',
     color: 'text-[#07C160]',
     bgColor: 'bg-[#07C160]/[0.05] dark:bg-[#07C160]/[0.1] hover:bg-[#07C160]/[0.08] dark:hover:bg-[#07C160]/[0.15]',
@@ -112,9 +112,8 @@ export default function AboutProfile() {
   const { vibrate } = useHaptic();
 
   useEffect(() => {
-    const img = new Image();
-    img.src = 'https://assets.coderfee.com/blog/wechat-qrcode.jpg';
-    getGitHubStats('coderfee').then(setGhStats);
+    // 清空旧二维码预加载
+    getGitHubStats('suyangb').then(setGhStats);
   }, []);
 
   useBodyScrollLock(activeModal !== 'none');
@@ -166,7 +165,7 @@ export default function AboutProfile() {
           isOpen={activeModal === 'rss'}
           onClose={closeModal}
           isCopied={copiedType === 'rss'}
-          onCopy={() => handleCopy('https://coderfee.com/rss.xml', 'rss')}
+          onCopy={() => handleCopy(`${window.location.origin}/rss.xml`, 'rss')}
         />
         <SitemapModal isOpen={activeModal === 'sitemap'} onClose={closeModal} />
         <FriendModal
