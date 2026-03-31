@@ -17,7 +17,7 @@ const posts = allPosts
   .filter(({ data: { tags = [], draft = false } }) => !draft && tags.includes(tag))
   .sort(({ data: { date: dateA } }, { data: { date: dateB } }) => dateB.valueOf() - dateA.valueOf());
 
-const tagDescription = `浏览 coderfee 博客中关于 ${tag} 的 ${posts.length} 篇技术文章，包括开发教程、实践经验和深度思考。探索与 ${tag} 相关的最新内容。`;
+const tagDescription = `浏览 王苏洋Blog 中关于 ${tag} 的 ${posts.length} 篇技术文章，包括开发教程、实践经验和深度思考。探索与 ${tag} 相关的最新内容。`;
 
 const pageTitle = `${tag} - 技术文章合集`;
 ---
