@@ -169,7 +169,7 @@ export default function NewsletterGrid({ items, title }: Props) {
           </h1>
           <div className="h-px w-8 lg:h-16 lg:w-px bg-zinc-200 dark:bg-zinc-800/80"></div>
           <p className="text-[10px] font-bold tracking-[0.4em] text-zinc-400 dark:text-zinc-500 uppercase whitespace-nowrap">
-            coderfee.com
+            wsyblog.cn
           </p>
         </div>
       </aside>
