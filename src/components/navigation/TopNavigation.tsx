@@ -57,50 +57,15 @@ export default function TopNavigation({ showNavigation = true }: Props) {
           whileHover="hover"
         >
           <img
-            src="https://assets.coderfee.com/favicon/www.svg"
-            alt="CoderFee"
-            className="size-8 group-hover:rotate-12 transition-transform duration-300"
+            src="https://wsyblog.cn/IMG_8745.jpeg"
+            alt="王苏洋Blog"
+            className="size-8 rounded-full group-hover:rotate-12 transition-transform duration-300 object-cover"
             width="32"
             height="32"
           />
-          <motion.span
-            className="font-major uppercase text-lg tracking-tight flex"
-            variants={{
-              hover: {
-                transition: {
-                  staggerChildren: 0.05,
-                },
-              },
-            }}
-          >
-            {'coderfee'.split('').map((char, index) => (
-              <motion.span
-                // biome-ignore lint/suspicious/noArrayIndexKey: Static logo text
-                key={`${char}-${index}`}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 0.4,
-                  delay: index * 0.05,
-                  type: 'spring',
-                  stiffness: 300,
-                  damping: 20,
-                }}
-                variants={{
-                  hover: {
-                    y: -4,
-                    transition: {
-                      duration: 0.2,
-                      repeat: 1,
-                      repeatType: 'reverse',
-                    },
-                  },
-                }}
-              >
-                {char}
-              </motion.span>
-            ))}
-          </motion.span>
+          <span className="text-lg font-medium tracking-tight">
+            王苏洋Blog
+          </span>
         </motion.a>
 
         <nav className="hidden md:flex items-center gap-2 relative" onMouseLeave={() => setHoveredPath(null)}>
