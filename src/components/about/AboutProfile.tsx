@@ -19,7 +19,7 @@ import type { Friend, ModalType, SocialLink } from './types';
 const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/coderfee',
+    url: 'https://github.com/suyangb',
     icon: 'tabler:brand-github',
     color: 'text-[#181717] dark:text-zinc-100',
     bgColor: 'bg-[#181717]/[0.03] dark:bg-white/[0.05] hover:bg-[#181717]/[0.06] dark:hover:bg-white/[0.08]',
