@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/coderfee',
+    url: 'https://github.com/suyangb',
     icon: 'tabler:brand-github',
   },
   {
     name: 'Twitter',
-    url: 'https://twitter.com/coderfee',
+    url: '',
     icon: 'tabler:brand-x',
   },
   {
@@ -99,11 +99,18 @@ export default function Footer() {
               rel="noreferrer"
               className="hover:text-zinc-800 dark:hover:text-zinc-200 hover:underline transition-colors"
             >
-              京ICP备19050952号-1
+              皖ICP备2024049551号-2
             </a>
-            <span>·</span>
-            <span className="normal-nums">© 2016 - {currentYear}</span>
+            <a
+              href="https://www.beian.gov.cn/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-zinc-800 dark:hover:text-zinc-200 hover:underline transition-colors"
+            >
+              皖公网安备34162202003345号
+            </a>
           </div>
+          <div className="normal-nums">© 2025 - {currentYear} 王苏洋Blog</div>
         </motion.div>
       </div>
     </footer>
