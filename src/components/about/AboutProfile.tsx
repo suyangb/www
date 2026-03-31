@@ -74,10 +74,10 @@ const socialLinks: SocialLink[] = [
 
 const friends: Friend[] = [
   {
-    name: '清溪奔快',
-    url: 'https://blog.ixmoyren.dev/',
-    desc: '不管青山碍',
-    avatar: 'https://blog.ixmoyren.dev/icons/favicon.svg',
+  name: 'Jackie的博客',
+  url: 'https://jackielzq.com/',
+  desc: '记录|交流|分享',
+  avatar: 'https://jackielzq.com/images/favicon.ico'
   },
 ];
 
